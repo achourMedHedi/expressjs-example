@@ -29,8 +29,8 @@ app.use('/auth', authRouter)
 app.use('/work/admin', loggedInMiddleware, hasAuthorization('admin'), workForAdminRouter)
 app.use('/work/client', loggedInMiddleware, hasAuthorization('client'), workForClientRouter)
 
-// app.listen(PORT, async () => {
-//     console.log('localhost:3000 on');
-// })
+app.listen(PORT, async () => {
+    console.log('localhost:3000 on');
+})
 
 module.exports = app
