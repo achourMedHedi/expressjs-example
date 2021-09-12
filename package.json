@@ -1,0 +1,28 @@
+{
+  "name": "samy-touati-test-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest --testTimeout=12000 --forceExit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "jest": "^27.1.1",
+    "supertest": "^6.1.6"
+  }
+}
